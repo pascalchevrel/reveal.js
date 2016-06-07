@@ -8,7 +8,8 @@ The footer indicates the confidentiality level of you presentation:
 - Mozilla Confidential - Specific Individuals Only - data that can be shared only with specific individuals who have been granted access by the data owner.
 
 To indicate the level of confidentiality to your slides, add a css class to the footer such as:
-<footer class='public'>
-
+```html
+<footer class="public">
+```
 Available options are:
 public, nda, workgroup, xfiles, none
