@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Mozilla Presentation Template</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/mozilla.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section class="center">
+                    <img src='lib/img/mozilla_wordmark_white.png'>
+                    Presentation Template &amp; Style Guide <b>2016</b>
+                </section>
+                <section>
+                    <section>
+                        <h4>The first h2, h3 or h4 element is at the top left</h4>
+                        This is my second slide
+                        <aside class="notes">This is my speaker Note</aside>
+                    </section>
+                    <section data-markdown>
+                        #### Unordered list in markdown
+                        - foo
+                        - bar
+                        - baz
+                    </section>
+                </section>
+                <section data-background-image="lib/img/firefox-logo-wordmark-white.png" data-background-size="380px" data-background-repeat="no-repeat">
+                    Slide 3: A background image
+                </section>
+                <footer class="workgroup"></footer>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                center: false,
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
