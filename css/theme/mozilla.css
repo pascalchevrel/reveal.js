@@ -352,5 +352,11 @@ footer.xfiles::after {
   color: #c13832;
   content: "Mozilla Confidential - Specific Individuals Only"; }
 
-b {
+footer.none::after {
+  display: none; }
+
+b, i, em {
   color: #ffcb00; }
+
+li::-moz-list-bullet {
+  color: #0096dd; }

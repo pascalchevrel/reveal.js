@@ -24,19 +24,27 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
+                <section class="center">
                     <img src='lib/img/mozilla_wordmark_white.png'>
                     Presentation Template &amp; Style Guide <b>2016</b>
                 </section>
                 <section>
-                    Slide 2
-                    <aside class="notes"> This is my speaker Note</aside>
+                    <section>
+                        <h3>Slide 2</h3>
+                        This is my second slide
+                        <aside class="notes">This is my speaker Note</aside>
+                    </section>
+                    <section data-markdown>
+                        #### Unordered list in markdown
+                        - foo
+                        - bar
+                        - baz
+                    </section>
                 </section>
-                <section>
-                    Slide 3
-                    <aside class="notes"> This is my speaker Note</aside>
+                <section data-background-image="lib/img/firefox-logo-wordmark-white.png" data-background-size="380px" data-background-repeat="no-repeat">
+                    Slide 3: A background image
                 </section>
-                <footer class="public"></footer>
+                <footer class="workgroup"></footer>
             </div>
         </div>
 
@@ -47,7 +55,7 @@
             // More info https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
                 history: true,
-
+                center: false,
                 // More info https://github.com/hakimel/reveal.js#dependencies
                 dependencies: [
                     { src: 'plugin/markdown/marked.js' },

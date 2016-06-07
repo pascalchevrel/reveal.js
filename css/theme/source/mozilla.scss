@@ -92,6 +92,7 @@ $headingFont: "Open Sans", sans-serif;
 // ---------------------------------------------
 
 // Theme specific addtions ---------------------
+// Tabzilla logo in top right position
 .reveal {
     background-image: url(../../lib/img/tabzilla.png);
     background-size: 147px 37px;
@@ -107,6 +108,7 @@ $headingFont: "Open Sans", sans-serif;
     box-shadow: none;
 }
 
+// Target audience with specific styling, displayed on all slides
 footer::after {
     position: absolute;
     bottom: 1em;
@@ -134,7 +136,15 @@ footer.xfiles::after {
     content: "Mozilla Confidential - Specific Individuals Only";
 }
 
-b {
+footer.none::after {
+    display: none;
+}
+
+b, i, em {
     color: $mozillaYellow;
+}
+
+li::-moz-list-bullet {
+    color: $mozillaFirefoxLightBlue;
 }
 // ---------------------------------------------
