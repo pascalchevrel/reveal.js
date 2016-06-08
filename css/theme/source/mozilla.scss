@@ -101,6 +101,10 @@ $headingFont: "Open Sans", sans-serif;
     border-top: 5px solid white;
 }
 
+.reveal {
+    font-size: 30px;
+}
+
 // Override reveal.js default styling of images
 .reveal section img {
     background: none;
@@ -140,11 +144,70 @@ footer.none::after {
     display: none;
 }
 
-b, i, em {
-    color: $mozillaYellow;
+// Most common tags
+@mixin headings {
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+        @content;
+    }
+}
+
+@include headings() {
+    text-shadow: none;
+    font-weight: bold;
+    text-transform: none;
+    text-align: left;
+}
+
+.reveal h1 {
+    font-size: 3em;
+}
+
+.reveal h1.frontpage {
+    text-align: center;
+    font-size: 6em;
+}
+
+.reveal h2 {
+    font-size: 2em;
+}
+
+.reveal h3 {
+    font-size: 1.6em;
+}
+
+.reveal section h2:first-of-type,
+.reveal section h3:first-of-type,
+.reveal section h4:first-of-type {
+    margin-top: -1em;
+    margin-left: -1em;
+}
+
+.reveal h4 {
+    font-size: 1.4em;
+}
+
+.reveal h5 {
+    font-size: 1.2em;
+}
+
+.reveal h6 {
+    font-size: 1.1em;
+}
+
+b, i, em, .orange {
+    color: $mozillaFirefoxLightOrange;
+}
+
+.green {
+    color: $mozillaGeckoGreen;
+}
+
+.blue {
+    color: $mozillaFirefoxLightBlue;
 }
 
 li::-moz-list-bullet {
     color: $mozillaFirefoxLightBlue;
 }
+
 // ---------------------------------------------
