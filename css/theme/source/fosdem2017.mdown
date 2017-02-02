@@ -1,0 +1,14 @@
+* train model
+    * place of nightly in train model
+* nightly geography and locale population
+    * show how locales % changed with new locales downloads
+    * show in which countries people are
+* list of things that were fixed in the past 8 months
+    * whatsnew page is back (show screenshot)
+    * snippets on home page
+    * All download pages consolidated on mozilla.org
+        * mozilla.org design
+        * nightly download pages are localized
+        * nightly downloads are now tracked
+        *
+* "contact me" slides

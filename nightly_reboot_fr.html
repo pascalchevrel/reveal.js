@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Nightly Reboot</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/mozilla.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal" data-background="lib/img/nightly/background-nightly.jpg">
+            <div class="slides" data-background="lib/img/nightly/background-nightly.jpg">
+                <section class="center" data-background="lib/img/nightly/background-nightly.jpg">
+                    <h1 class="frontpage">nightly</h1>
+                    <span style="font-family: monospace; color: black; letter-spacing: 1em; color: gold">&lt;reloaded/&gt;</span>
+                </section>
+                <section>
+                    <h4 style="margin-top: -1em; text-align:center;"><b class="green">Nightly</b> c'est quoi&nbsp;?</h4>
+                    <img src="lib/img/nightly/logo-nightly.png">
+
+                    <div data-markdown>
+                    - Version pré-alpha de Firefox, *pour les utilisateurs avancés*
+                    - Compilé quotidiennement
+                    - Rapports de plantage et télémétrie activés par défaut
+                    </div>
+                </section>
+                <section>
+                    <h4 style="margin-top: -1em; text-align:center;"><b>Pourquoi utiliser Nightly&nbsp;?</b></h4>
+                    <div data-markdown style="margin-top: 5em">
+                    - Pour aider Mozilla à améliorer Firefox
+                    - Pour jouer avec les futures fonctionnalités de Firefox
+                    - Pour participer concrètement à un projet libre
+                    </div>
+                </section>
+                <footer class="none"></footer>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                center: false,
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+            // Slide every five seconds
+            Reveal.configure({
+                    autoSlide: 5000,
+                    loop: true
+            });
+        </script>
+    </body>
+</html>

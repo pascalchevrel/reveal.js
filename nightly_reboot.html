@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Nightly Reboot</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/mozilla2017.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+    </head>
+    <body>
+        <div class="reveal" data-background="lib/img/nightly/background-nightly.jpg">
+            <div class="slides" data-background="lib/img/nightly/background-nightly.jpg">
+                <section class="center" data-background="lib/img/nightly/background-nightly.jpg">
+                    <h1 class="frontpage">nightly</h1>
+                    <span style="font-family: monospace; color: black; letter-spacing: 1em; color: gold">&lt;reloaded/&gt;</span>
+                </section>
+                <section>
+                    <section>
+                        <h4 style="margin-top: -1em; text-align:center;">Firefox <b class="green">Nightly</b> in a nutshell?</h4>
+                        <img src="lib/img/nightly/logo-nightly.png">
+
+                        <div data-markdown>
+                        - Compiled every day with mozilla-central code
+                        - 6 first weeks of our train model
+                        - Crash reporting and telemetry on by default
+                        - Many experimental features are activated
+                        - No Firefox branding
+                        - Awesomeness++, Stability--
+                        </div>
+                    </section>
+                    <section>
+                        <h4 style="margin-top: -1em; text-align:center;">Nightly in our train model</h4>
+                        <table>
+                            <tr style="background-color: white; color: darkgray; ">
+                                <th style="text-align: center; color: #751010;">54</td>
+                                <th style="text-align: center; color: #751010;">53</td>
+                                <th style="text-align: center; color: #751010;">52</td>
+                                <th style="text-align: center; color: #751010;">51</td>
+                                <th style="text-align: center; color: #751010;">50</td>
+                                <th style="text-align: center; color: #751010;">49</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: transparent;text-align: center"></td>
+                                <td style="background-color: transparent"></td>
+                                <td style="background-color: black;text-align: center">Nightly</td>
+                                <td style="background-color: darkblue;text-align: center">Aurora</td>
+                                <td style="background-color: orange;text-align: center">Beta</td>
+                                <td style="background-color: green;text-align: center">Release</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: transparent;text-align: center"></td>
+                                <td style="background-color: black;text-align: center">Nightly</td>
+                                <td style="background-color: darkblue;text-align: center">Aurora</td>
+                                <td style="background-color: orange;text-align: center">Beta</td>
+                                <td style="background-color: green;text-align: center">Release</td>
+                                <td style="background-color: transparent"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black;text-align: center">Nightly</td>
+                                <td style="background-color: darkblue;text-align: center">Aurora</td>
+                                <td style="background-color: orange;text-align: center">Beta</td>
+                                <td style="background-color: green;text-align: center">Release</td>
+                                <td style="background-color: transparent"></td>
+                                <td style="background-color: transparent"></td>
+                            </tr>
+                            <tr style="background-color: white; color: darkgray; display:none">
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                            </tr>
+                        </table>
+                        <p>6 weeks cycles: Nightly + Aurora + Beta = 18 weeks to release</p>
+
+                    </section>
+                    <section>
+                        <h4 style="margin-top: -1em; text-align:center;">If Nightly were good enough, could we do that?</h4>
+                        <table>
+                            <tr style="background-color: white;">
+                                <th style="text-align: center; color: #751010;">57</td>
+                                <th style="text-align: center; color: #751010;">56</td>
+                                <th style="text-align: center; color: #751010;">55</td>
+                                <th style="text-align: center; color: #751010;">54</td>
+                                <th style="text-align: center; color: #751010;">53</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: transparent;text-align: center"></td>
+                                <td style="background-color: transparent"></td>
+                                <td style="background-color: black;text-align: center">Nightly</td>
+                                <td style="background-color: orange;text-align: center">Beta</td>
+                                <td style="background-color: green;text-align: center">Release</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: transparent;text-align: center"></td>
+                                <td style="background-color: black;text-align: center">Nightly</td>
+                                <td style="background-color: orange;text-align: center">Beta</td>
+                                <td style="background-color: green;text-align: center">Release</td>
+                                <td style="background-color: transparent"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black;text-align: center">Nightly</td>
+                                <td style="background-color: orange;text-align: center">Beta</td>
+                                <td style="background-color: green;text-align: center">Release</td>
+                                <td style="background-color: transparent"></td>
+                                <td style="background-color: transparent"></td>
+                            </tr>
+                            <tr style="background-color: white; color: darkgray; display:none">
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                                <th style="text-align: center">6 weeks</td>
+                            </tr>
+                        </table>
+                        <p>8 weeks cycles: Nightly + Beta = 16 weeks to release</p>
+
+                    </section>
+                </section>
+                <section>
+                    <h4 style="margin-top: -1em; text-align:center;">Why <b class="green">more</b> Firefox Nightly users?</h4>
+                    <div data-markdown style="margin-top: 5em">
+                    - We need your crashes!
+                    - Tech-savvy crowd, report actionnable bugs
+                    - Fixing regressions as early as possible
+                    - We need Nightly users to get involved.
+                    </div>
+                </section>
+                <section>
+                    <h4 style="margin-top: -1em; text-align:center;">Where are our users</h4>
+                    <script>
+                          google.charts.load('upcoming', {'packages':['geochart']});
+                          google.charts.setOnLoadCallback(drawRegionsMap);
+
+                          function drawRegionsMap() {
+
+                            var data = google.visualization.arrayToDataTable([
+                              ['Country', 'Popularity'],
+
+                              ['United States', 16.2],
+                              ['Germany', 9.6],
+                              ['Russia', 5.9],
+                              ['India', 5.5],
+                              ['Indonesia', 5.0],
+                              ['France', 3.8],
+                              ['United Kingdom', 3.5],
+                              ['Canada', 2.8],
+                              ['Poland', 2.5],
+                              ['Ukraine', 2.3],
+                              ['Japan', 2.1],
+                              ['Australia', 1.9],
+                              ['Brazil', 1.9],
+                              ['Netherlands', 1.7],
+                              ['Italy', 1.6],
+                              ['Egypt', 1.9],
+                              ['Romania', 1.3],
+                              ['Austria', 1.1],
+                              ['Bangladesh', 1.0],
+                              ['Spain', 1.0],
+                              ['Philippines', 1.0],
+                              ['Mexico', 1.0],
+                              ['Malaysia', 0.9],
+                              ['Czech Republic', 0.9],
+                              ['Sweden', 0.9],
+                              ['Switzerland', 0.8],
+                              ['Thailand', 0.8],
+                                    ['China', 0.8],
+
+
+                            ]);
+
+                            var options = {};
+
+                            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+                            chart.draw(data, options);
+                          }
+      </script>
+                    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+                </section>
+                <section>
+                    <h4 style="margin-top: -1em; text-align:center;">Contact  information</h4>
+                    <ul style="margin-top: 5ems; vertical-align:bottom; list-style: none">
+                        <li style=" display: flex; align-items: center;"><img src="/lib/img/nightly/Thunderbird_Faenza.svg" style="height: 2em;margin-right: 1em; ">pascal@mozilla.com</li>
+                        <li style=" display: flex; align-items: center;"><img src="/lib/img/nightly/Twitter_Bird.svg" style="height: 1.5em;margin-right: 1em; ">pascalchevrel</li>
+                        <li style=" display: flex; align-items: center;"><img src="/lib/img/nightly/irc.svg" style="height: 1.6em;margin-right: 1em; ">pascalc</li>
+                    </ul>
+                </section>
+                <footer class="none"></footer>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                center: false,
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
