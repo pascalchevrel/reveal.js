@@ -1,0 +1,22 @@
+table.demography {
+    display: inline-block;
+    margin: 1em !important;
+}
+
+table.demography tr {
+    font-size: 0.5em;
+}
+
+table.demography tbody tr:nth-child(1) th {
+   /* Styles goes here */
+    background-color: black;
+    text-align: center;
+}
+
+table.demography th {
+    background-color: #6FBE4A;
+}
+
+table.demography td {
+    text-align: right;
+}

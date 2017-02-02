@@ -6,8 +6,9 @@
 
         <title>Nightly Reboot</title>
 
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/mozilla2017.css">
+        <link rel="stylesheet" href="/css/reveal.css">
+        <link rel="stylesheet" href="/css/theme/mozilla2017.css">
+        <link rel="stylesheet" href="/presentation_assets/nightly_reboot/style.css">
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,22 +21,18 @@
             link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-
-
     </head>
     <body>
-        <div class="reveal" data-background="lib/img/nightly/background-nightly.jpg">
-            <div class="slides" data-background="lib/img/nightly/background-nightly.jpg">
-                <section class="center" data-background="lib/img/nightly/background-nightly.jpg">
+        <div class="reveal" data-background="/presentation_assets/nightly_reboot/background-nightly.jpg">
+            <div class="slides" data-background="/presentation_assets/nightly_reboot/background-nightly.jpg">
+                <section class="center" data-background="/presentation_assets/nightly_reboot/background-nightly.jpg">
                     <h1 class="frontpage">nightly</h1>
                     <span style="font-family: monospace; color: black; letter-spacing: 1em; color: gold">&lt;reloaded/&gt;</span>
                 </section>
                 <section>
                     <section>
                         <h4 style="margin-top: -1em; text-align:center;">Firefox <b class="green">Nightly</b> in a nutshell?</h4>
-                        <img src="lib/img/nightly/logo-nightly.png">
+                        <img src="/presentation_assets/nightly_reboot/logo-nightly.png">
 
                         <div data-markdown>
                         - Compiled every day with mozilla-central code
@@ -138,72 +135,171 @@
                     </section>
                 </section>
                 <section>
-                    <h4 style="margin-top: -1em; text-align:center;">Why <b class="green">more</b> Firefox Nightly users?</h4>
+                    <h4 style="margin-top: -1em; text-align:center;">Why we <b class="green">need</b> Firefox Nightly users?</h4>
                     <div data-markdown style="margin-top: 5em">
-                    - We need your crashes!
-                    - Tech-savvy crowd, report actionnable bugs
-                    - Fixing regressions as early as possible
-                    - We need Nightly users to get involved.
+                    - We need their <i>crash reports</i> to prioritize stability work
+                    - Telemetry can also give us valuable information
+                    - Tech-savvy crowd, report actionable bugs
+                    - If we want to ship faster we must detect regressions earlier
+                    - Our core technical community, let's get them involved!
+
                     </div>
                 </section>
                 <section>
-                    <h4 style="margin-top: -1em; text-align:center;">Where are our users</h4>
-                    <script>
-                          google.charts.load('upcoming', {'packages':['geochart']});
-                          google.charts.setOnLoadCallback(drawRegionsMap);
+                    <section>
+                        <h4 style="margin-top: -1em; text-align:center;">Where are our users</h4>
+                        <table class="demography">
+                            <caption>Top 15 Countries</caption>
+                            <tbody>
+                            <tr>
+                                <th>Country</th>
+                                <th>% of Nightly users</th>
+                            </tr>
+                            <tr>
+                                <th>United States</th>
+                                <td>16.6</td>
+                            </tr>
+                            <tr>
+                                <th>Germany</th>
+                                <td>9.5</td>
+                            </tr>
+                            <tr>
+                                <th>Russia</th>
+                                <td>5.8</td>
+                            </tr>
+                            <tr>
+                                <th>India</th>
+                                <td>5.4</td>
+                            </tr>
+                            <tr>
+                                <th>Indonesia</th>
+                                <td>5.0</td>
+                            </tr>
+                            <tr>
+                                <th>France</th>
+                                <td>3.9</td>
+                            </tr>
+                            <tr>
+                                <th>United Kingdom</th>
+                                <td>3.4</td>
+                            </tr>
+                            <tr>
+                                <th>Canada</th>
+                                <td>2.9</td>
+                            </tr>
+                            <tr>
+                                <th>Poland</th>
+                                <td>2.4</td>
+                            </tr>
+                            <tr>
+                                <th>Ukraine</th>
+                                <td>2.4</td>
+                            </tr>
+                            <tr>
+                                <th>Japan</th>
+                                <td>2.0</td>
+                            </tr>
+                            <tr>
+                                <th>Australia</th>
+                                <td>1.8</td>
+                            </tr>
+                            <tr>
+                                <th>Brazil</th>
+                                <td>1.8</td>
+                            </tr>
+                            <tr>
+                                <th>Netherlands</th>
+                                <td>1.6</td>
+                            </tr>
+                            <tr>
+                                <th>Italy</th>
+                                <td>1.6</td>
+                            </tr>
+                        </tbody>
+                        </table>
 
-                          function drawRegionsMap() {
+                        <table class="demography">
+                            <caption>Top 15 langages</caption>
+                            <tbody>
+                            <tr>
+                                <th>Locale code</th>
+                                <th>% of Nightly users</th>
+                            </tr>
+                            <tr>
+                                <th>en-US</th>
+                                <td>86.5</td>
+                            </tr>
+                            <tr>
+                                <th>ru</th>
+                                <td>5.2</td>
+                            </tr>
+                            <tr>
+                                <th>de</th>
+                                <td>1.8</td>
+                            </tr>
+                            <tr>
+                                <th>fr</th>
+                                <td>1.5</td>
+                            </tr>
+                            <tr>
+                                <th>ja</th>
+                                <td>0.8</td>
+                            </tr>
+                            <tr>
+                                <th>pl</th>
+                                <td>0.6</td>
+                            </tr>
+                            <tr>
+                                <th>en-GB</th>
+                                <td>0.6</td>
+                            </tr>
+                            <tr>
+                                <th>es-ES</th>
+                                <td>0.4</td>
+                            </tr>
+                            <tr>
+                                <th>zh-CN</th>
+                                <td>0.3</td>
+                            </tr>
+                            <tr>
+                                <th>pt-BR</th>
+                                <td>0.3</td>
+                            </tr>
+                            <tr>
+                                <th>it</th>
+                                <td>0.2</td>
+                            </tr>
+                            <tr>
+                                <th>ko</th>
+                                <td>0.2</td>
+                            </tr>
+                            <tr>
+                                <th>uk</th>
+                                <td>0.2</td>
+                            </tr>
+                            <tr>
+                                <th>zh-TW</th>
+                                <td>0.2</td>
+                            </tr>
+                            <tr>
+                                <th>ar</th>
+                                <td>0.1</td>
+                            </tr>
 
-                            var data = google.visualization.arrayToDataTable([
-                              ['Country', 'Popularity'],
 
-                              ['United States', 16.2],
-                              ['Germany', 9.6],
-                              ['Russia', 5.9],
-                              ['India', 5.5],
-                              ['Indonesia', 5.0],
-                              ['France', 3.8],
-                              ['United Kingdom', 3.5],
-                              ['Canada', 2.8],
-                              ['Poland', 2.5],
-                              ['Ukraine', 2.3],
-                              ['Japan', 2.1],
-                              ['Australia', 1.9],
-                              ['Brazil', 1.9],
-                              ['Netherlands', 1.7],
-                              ['Italy', 1.6],
-                              ['Egypt', 1.9],
-                              ['Romania', 1.3],
-                              ['Austria', 1.1],
-                              ['Bangladesh', 1.0],
-                              ['Spain', 1.0],
-                              ['Philippines', 1.0],
-                              ['Mexico', 1.0],
-                              ['Malaysia', 0.9],
-                              ['Czech Republic', 0.9],
-                              ['Sweden', 0.9],
-                              ['Switzerland', 0.8],
-                              ['Thailand', 0.8],
-                                    ['China', 0.8],
-
-
-                            ]);
-
-                            var options = {};
-
-                            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-                            chart.draw(data, options);
-                          }
-      </script>
-                    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+                            </tbody>
+                        </table>
+                        </section>
+                        <section>
+                            <img src="/presentation_assets/nightly_reboot/NightlyUsersWorldMap.png" style="float:right">
+                        </section>
                 </section>
                 <section>
                     <h4 style="margin-top: -1em; text-align:center;">Contact  information</h4>
                     <ul style="margin-top: 5ems; vertical-align:bottom; list-style: none">
-                        <li style=" display: flex; align-items: center;"><img src="/lib/img/nightly/Thunderbird_Faenza.svg" style="height: 2em;margin-right: 1em; ">pascal@mozilla.com</li>
-                        <li style=" display: flex; align-items: center;"><img src="/lib/img/nightly/Twitter_Bird.svg" style="height: 1.5em;margin-right: 1em; ">pascalchevrel</li>
-                        <li style=" display: flex; align-items: center;"><img src="/lib/img/nightly/irc.svg" style="height: 1.6em;margin-right: 1em; ">pascalc</li>
+                        <li style=" display: flex; align-items: center;"><img src="/presentation_assets/nightly_reboot/Thunderbird_Faenza.svg" style="height: 2em;margin-right: 1em; ">pascal@mozilla.com</li>
+                        <li style=" display: flex; align-items: center;"><img src="/presentation_assets/nightly_reboot/Twitter_Bird.svg" style="height: 1.5em;margin-right: 1em; ">pascalchevrel</li>
+                        <li style=" display: flex; align-items: center;"><img src="/presentation_assets/nightly_reboot/irc.svg" style="height: 1.6em;margin-right: 1em; ">pascalc</li>
                     </ul>
                 </section>
                 <footer class="none"></footer>
