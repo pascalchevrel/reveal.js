@@ -6,6 +6,10 @@
     color: white;
 }
 
+.reveal li {
+    margin-top: 0.3em;
+}
+
 section h4 {
      margin-top: -1em;
      text-align:center !important;
@@ -68,7 +72,7 @@ ul.nobullet {
 }
 
 .topMargin{
-    margin: 5em !important;
+    margin: 4em !important;
 }
 
 .frontpage footer {
