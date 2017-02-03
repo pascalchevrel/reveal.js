@@ -70,3 +70,13 @@ ul.nobullet {
 .topMargin{
     margin: 5em !important;
 }
+
+.frontpage footer {
+    color: orange;
+    font-size: 0.7em;
+    margin-top: 3em;
+}
+
+h4.centerText {
+    margin-top: 6em !important;
+}
