@@ -1,6 +1,11 @@
 .reveal h4 {
      color: #f6f6ba;
  }
+
+.reveal h4 span {
+    color: white;
+}
+
 section h4 {
      margin-top: -1em;
      text-align:center !important;
@@ -35,7 +40,6 @@ ul.nobullet {
 }
 
 .nobullet {
-    margin-top: 5ems;
     vertical-align:bottom;
     list-style: none
 }
@@ -61,4 +65,8 @@ ul.nobullet {
 .nobullet li {
     text-align: right;
     font-weight: bold;
+}
+
+.topMargin{
+    margin: 5em !important;
 }
