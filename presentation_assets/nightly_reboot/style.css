@@ -26,7 +26,8 @@ table.demography td {
     text-align: right;
 }
 
-table.trainmodel {
+table.trainmodel,
+ul.nobullet {
     margin-top: 5em;
 }
 
