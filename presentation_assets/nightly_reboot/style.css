@@ -38,12 +38,12 @@ table.demography td {
     text-align: right;
 }
 
-table.trainmodel,
-ul.nobullet {
+table.trainmodel {
     margin-top: 5em;
 }
 
 .nobullet {
+    margin-top: 2em;
     vertical-align:bottom;
     list-style: none
 }
